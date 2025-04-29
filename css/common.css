@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 250px;
+}
+header{
+    background-color: #3f4b57;
+    padding-top: 30px; 
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+main{
+    padding-top: 210px;
+}
+header h1{
+    font-size: clamp(60px,8vw,150px);
+    margin-bottom: clamp(10px,1.6vw,20px);
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    color: white;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+#info{
+    background-color: #3f4b57;
+    padding-top: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: white;
+}
+#info h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+#info table{
+    font-size: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-collapse: collapse;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#info tbody{
+    display: inline-block;
+    text-align: left;
+}
+#info td{
+    padding: 5px 10px 5px;
+    border: none;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+#info td:first-child{
+    border-left: none;
+}
+#info tr:first-child td{
+    border-top: none;
+}
+#info a{
+    color: white;
+    text-decoration: none;
+}
+#info .item{
+    background-image: url(../images/cocktail.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: 10% 100%;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+footer{
+    background-color: #3f4b57;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    /* 1024pxまでの幅の場合に適応される */
+        main{
+            padding-top: 170px;
+        }
+    
+    }
+ @media screen and (max-width: 768px) {
+    /* 768pxまでの幅の場合に適応される */
+        main{
+            padding-top: 130px;
+        }
+    }
+@media screen and (max-width: 480px) {
+    /* 480pxまでの幅の場合に適応される */
+        .menu h2{
+            font-size: 30px;    
+        }
+    }
