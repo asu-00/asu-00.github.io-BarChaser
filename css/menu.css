@@ -1,0 +1,49 @@
+main{
+    background-color: #e6e4e5;
+}
+.menu{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.menu div{
+    display: inline-block;
+    text-align: left;
+    width: 250px;
+}
+h2{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #3f4b57;
+}
+h3{
+    font-size: 20px;
+    color: #3f4b57;
+    text-decoration: underline #3f4b57 1px;
+    margin: 20px 0 20px;
+}
+.list{
+    text-align: left;
+    float: left;
+}
+.amount{
+    text-align: right;
+}
+#info .item{
+    padding: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* 1024pxまでの幅の場合に適応される */
+    
+    }
+@media screen and (max-width: 768px) {
+    /* 768pxまでの幅の場合に適応される */
+
+    }
+@media screen and (max-width: 480px) {
+    /* 480pxまでの幅の場合に適応される */
+        h3{
+            font-size: 18px;
+        }
+    }
